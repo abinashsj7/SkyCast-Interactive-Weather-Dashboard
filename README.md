@@ -1,14 +1,22 @@
- Dynamic Weather Dashboard
+SkyCast: Interactive Weather Dashboard
 
-Author     : Abinash SJ  
-College    : Sri Sairam Institute of Technology, Chennai  
-Department : CSE
+Author  : Abinash SJ  
+College : Sri Sairam Institute of Technology, Chennai (CSE)
 
-Description : 
-A responsive frontend weather dashboard that fetches real-time weather and 5-day forecasts from OpenWeatherMap. Features search, geolocation, favorites, unit toggle, and a forecast chart.
+Description
+SkyCast is an interactive weather dashboard that fetches **real-time weather** and **5-day forecasts** using the OpenWeatherMap API.  
+Features include city search, geolocation, unit toggle, favorites, and a forecast chart.
 
-How to set up (in-browser)
-1. Create `config.js` and paste your OpenWeatherMap API key:
+Features
+- Search weather by city  
+- Use 📍 button for current location  
+- 5-day forecast with chart (Chart.js)  
+- Save favorite cities (LocalStorage)  
+- Toggle units °C / °F  
+- Responsive design  
+
+Setup
+1. Create a free API key at [OpenWeatherMap](https://openweathermap.org/).  
+2. In `config.js`, paste your API key:
    ```js
-   const OPENWEATHER_API_KEY = "c1fc84e1ecb2e1341213691419bd1da2";
-
+   const OPENWEATHER_API_KEY = "YOUR_KEY_HERE";
