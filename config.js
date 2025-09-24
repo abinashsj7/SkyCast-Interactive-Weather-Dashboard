@@ -1,3 +1,3 @@
 // config.js
 // Replace with your actual OpenWeatherMap API key (between quotes).
-const OPENWEATHER_API_KEY = "b28981e745ca8beea0630869f6299230";
+const OPENWEATHER_API_KEY = "32f91f1d4678e3d091a4f52ac9454bca";
