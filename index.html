@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Your API key file (create config.js and add your key) -->
+  <script src="config.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Dynamic Weather Dashboard</h1>
+    <div class="controls">
+      <input id="cityInput" placeholder="Search city (e.g. Chennai)" />
+      <button id="searchBtn">Search</button>
+      <button id="geoBtn" title="Use my location">📍</button>
+      <select id="unitSelect" title="Units">
+        <option value="metric">°C</option>
+        <option value="imperial">°F</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="main-grid">
+    <section class="left-col">
+      <div id="currentCard" class="card empty">
+        <p class="hint">Search a city or click the location icon</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>5-Day Forecast</h3>
+        </div>
+        <div id="forecastList" class="forecast-list"></div>
+        <canvas id="forecastChart" height="120"></canvas>
+      </div>
+    </section>
+
+    <aside class="right-col">
+      <div class="card">
+        <h3>Favorites</h3>
+        <div id="favorites"></div>
+        <input id="favInput" placeholder="Add favorite city" />
+        <button id="addFavBtn">Add</button>
+      </div>
+
+      <div class="card">
+        <h3>Details</h3>
+        <ul id="detailsList" class="details-list">
+          <li>Humidity: —</li>
+          <li>Wind: —</li>
+          <li>Sunrise / Sunset: —</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tips</h3>
+        <ul>
+          <li>Click a forecast day to highlight it on the chart.</li>
+          <li>Favorites are saved in your browser (LocalStorage).</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Built by Abinash SJ • CSE, Sri Sairam Institute of Technology</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
