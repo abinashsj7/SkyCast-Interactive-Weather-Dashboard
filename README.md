@@ -4,7 +4,7 @@ Author     : Abinash SJ
 College    : Sri Sairam Institute of Technology, Chennai  
 Department : CSE
 
-Description
+Description : 
 A responsive frontend weather dashboard that fetches real-time weather and 5-day forecasts from OpenWeatherMap. Features search, geolocation, favorites, unit toggle, and a forecast chart.
 
 How to set up (in-browser)
